@@ -1,0 +1,105 @@
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  background-color: hsl(216, 12%, 8%);
+  height: 100%;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  color: hsl(217, 12%, 63%);
+}
+
+.card {
+  background: rgb(31, 38, 48);
+  background: linear-gradient(
+    180deg,
+    rgba(31, 38, 48, 1) 0%,
+    rgba(23, 30, 40, 1) 100%
+  );
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  width: 300px;
+  border-radius: 20px;
+  padding: 25px;
+}
+
+.circle {
+  border-radius: 100%;
+  width: 45px;
+  height: 45px;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-thanks {
+  text-align: center;
+}
+
+.card > h1 {
+  color: hsl(0, 0%, 100%);
+  margin: 20px 0px;
+  font-size: 26px;
+}
+
+.card > p {
+  margin-bottom: 30px;
+}
+
+.rating-options {
+  /* margin: 0px auto; */
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.rating-options > .circle:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+
+/* higher specificity than above */
+.rating-options > .circle.selected {
+  background-color: hsl(216, 12%, 54%);
+  color: hsl(0, 0%, 100%);
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.button-submit {
+  text-align: center;
+  background-color: hsl(25, 97%, 53%);
+  width: 300px;
+  height: 45px;
+  color: hsl(0, 0%, 100%);
+  border-radius: 30px;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.button-submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+
+.hidden {
+  display: none;
+}
