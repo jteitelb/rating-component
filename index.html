@@ -30,7 +30,7 @@
       <div id="card-thanks" class="card-thanks hidden">
         <img src="images/illustration-thank-you.svg" />
         <div class="selected-text">
-          You selected <span id="rating-selected">_</span> out of 5
+          <div>You selected <span id="rating-selected"></span> out of 5</div>
         </div>
       </div>
       <h1 id="card-header">How did we do?</h1>
@@ -38,31 +38,77 @@
         Please let us know how we did with your support request. All feedback is
         appreciated to help us improve our offering!
       </p>
+
       <div id="rating-options" class="rating-options">
-        <div class="circle">
-          <div class="rating-num" id="rating-num-1">1</div>
-        </div>
-        <div class="circle">
-          <div class="rating-num" id="rating-num-2">2</div>
-        </div>
-        <div class="circle">
-          <div class="rating-num" id="rating-num-3">3</div>
-        </div>
-        <div class="circle">
-          <div class="rating-num" id="rating-num-4">4</div>
-        </div>
-        <div class="circle">
-          <div class="rating-num" id="rating-num-5">5</div>
-        </div>
+        <label for="rating-num-1">
+          <input
+            onclick="radioClicked()"
+            type="radio"
+            name="rating"
+            value="1"
+            id="rating-num-1"
+          />
+          <div class="circle">
+            <div class="rating-num" id="rating-num-1">1</div>
+          </div>
+        </label>
+
+        <label for="rating-num-2">
+          <input
+            onclick="radioClicked()"
+            type="radio"
+            name="rating"
+            value="2"
+            id="rating-num-2"
+          />
+          <div class="circle">
+            <div class="rating-num" id="rating-num-2">2</div>
+          </div>
+        </label>
+        <label for="rating-num-3">
+          <input
+            onclick="radioClicked()"
+            type="radio"
+            name="rating"
+            value="3"
+            id="rating-num-3"
+          />
+          <div class="circle">
+            <div class="rating-num" id="rating-num-3">3</div>
+          </div>
+        </label>
+
+        <label for="rating-num-4">
+          <input
+            onclick="radioClicked()"
+            type="radio"
+            name="rating"
+            value="4"
+            id="rating-num-4"
+          />
+          <div class="circle">
+            <div class="rating-num" id="rating-num-4">4</div>
+          </div>
+        </label>
+
+        <label for="rating-num-5">
+          <input
+            onclick="radioClicked()"
+            type="radio"
+            name="rating"
+            value="5"
+            id="rating-num-5"
+          />
+          <div class="circle">
+            <div class="rating-num" id="rating-num-5">5</div>
+          </div>
+        </label>
       </div>
+
       <div id="button-container" class="button-container">
         <div class="button-submit" onclick="submitHandler()">Submit</div>
       </div>
     </div>
-
-    <!--- 
-    You selected {rating} out of 5 
-    -->
 
     <div class="attribution">
       Challenge by

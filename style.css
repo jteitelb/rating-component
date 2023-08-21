@@ -29,6 +29,7 @@ body {
   margin-right: auto;
   margin-top: 200px;
   width: 300px;
+  height: 320px;
   border-radius: 20px;
   padding: 25px;
 }
@@ -44,6 +45,30 @@ body {
 }
 
 .card-thanks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  /* text-align: center; */
+}
+
+.selected-text {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(213, 19%, 18%);
+  font-weight: 400;
+  border-radius: 50px;
+  width: 180px;
+  height: 30px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.center-text {
   text-align: center;
 }
 
@@ -64,15 +89,24 @@ body {
   cursor: pointer;
 }
 
-.rating-options > .circle:hover {
-  background-color: hsl(25, 97%, 53%);
+.rating-options > label > .circle:hover {
+  background-color: hsl(216, 12%, 54%);
   color: hsl(0, 0%, 100%);
 }
 
 /* higher specificity than above */
-.rating-options > .circle.selected {
-  background-color: hsl(216, 12%, 54%);
+.rating-options > label > input:checked + .circle {
+  background-color: hsl(25, 97%, 53%);
   color: hsl(0, 0%, 100%);
+}
+
+input[type="radio"] {
+  position: absolute;
+  opacity: 0;
+}
+
+input + .circle {
+  cursor: pointer;
 }
 
 .button-container {
