@@ -127,6 +127,7 @@ input + .circle {
   align-items: center;
   justify-content: center;
   margin-top: 20px;
+  letter-spacing: 2px;
 }
 
 .button-submit:hover {
