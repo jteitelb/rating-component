@@ -25,10 +25,10 @@
   <body>
     <div class="card">
       <div id="card-star" class="circle">
-        <img src="images/icon-star.svg" />
+        <img src="images/icon-star.svg" alt="star" />
       </div>
       <div id="card-thanks" class="card-thanks hidden">
-        <img src="images/illustration-thank-you.svg" />
+        <img src="images/illustration-thank-you.svg" alt="" />
         <div class="selected-text">
           <div>You selected <span id="rating-selected"></span> out of 5</div>
         </div>
@@ -48,9 +48,9 @@
             value="1"
             id="rating-num-1"
           />
-          <div class="circle">
-            <div class="rating-num" id="rating-num-1">1</div>
-          </div>
+          <span class="circle">
+            <div class="rating-num" id="rating-num-circle-1">1</div>
+          </span>
         </label>
 
         <label for="rating-num-2">
@@ -61,9 +61,9 @@
             value="2"
             id="rating-num-2"
           />
-          <div class="circle">
-            <div class="rating-num" id="rating-num-2">2</div>
-          </div>
+          <span class="circle">
+            <div class="rating-num" id="rating-num-circle-2">2</div>
+          </span>
         </label>
         <label for="rating-num-3">
           <input
@@ -73,9 +73,9 @@
             value="3"
             id="rating-num-3"
           />
-          <div class="circle">
-            <div class="rating-num" id="rating-num-3">3</div>
-          </div>
+          <span class="circle">
+            <div class="rating-num" id="rating-num-circle-3">3</div>
+          </span>
         </label>
 
         <label for="rating-num-4">
@@ -86,9 +86,9 @@
             value="4"
             id="rating-num-4"
           />
-          <div class="circle">
-            <div class="rating-num" id="rating-num-4">4</div>
-          </div>
+          <span class="circle">
+            <div class="rating-num" id="rating-num-circle-4">4</div>
+          </span>
         </label>
 
         <label for="rating-num-5">
@@ -99,9 +99,9 @@
             value="5"
             id="rating-num-5"
           />
-          <div class="circle">
-            <div class="rating-num" id="rating-num-5">5</div>
-          </div>
+          <span class="circle">
+            <div class="rating-num" id="rating-num-circle-5">5</div>
+          </span>
         </label>
       </div>
 
@@ -117,6 +117,6 @@
       >. Coded by <a href="https://github.com/jteitelb/">jteitelb</a>.
     </div>
 
-    <script type="text/javascript" src="index.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
